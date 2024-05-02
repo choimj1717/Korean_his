@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/test.css') }}">
+    <!-- <link rel="stylesheet" href="../static/css/test.css"> !-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>한국사 사전</title> 
+</head>
+<body>
+    <h1>한국사 사전</h1>
+    <div>
+    <form action="/add_word" method="post">
+        <label for="term">단어:</label>
+        <input type="text" id="term" name="term" required>
+        <label for="definition">정의:</label>
+        <textarea id="definition" name="definition" required></textarea>
+        <button type="submit">추가</button>
+    </form>
+    </div>
+    <h2>검색</h2>
+    <div>
+    <form action="/search" method="post">
+        <label for="search_term">단어:</label>
+        <input type="text" id="search_term" name="term" style="border-radius: 15px;" required>
+        <button type="submit">검색</button>
+    </form>
+    </div>
+</body>
+</html>

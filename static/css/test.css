@@ -1,0 +1,87 @@
+body {
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/img/background.jpg');
+}
+
+h1, h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff4438;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* 화려한 배경 이미지 */
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('static/img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+    opacity: 0.4;
+} */

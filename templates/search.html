@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <menta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=" {{ url_for('static', filename='css/search.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="div">
+            <h1>검색 결과</h1>
+            {% if word %}
+            <h2 class="size">{{ word.term }}</h2>
+            <p class="size">{{ word.definition }}</p>
+            {% else %}
+            <p class="size">해당 단어를 찾을 수 없습니다.</p>
+            {% endif %}
+        </div>
+    </form>
+    <div style="text-align: center;">
+        <button id="returnButton" class="pretty-button" style="text-align: center;">검색, 단어 등록 창으로 이동</button>
+    </div>
+    
+    <script>
+        document.getElementById("returnButton").addEventListener("click", function() {
+        window.location.href = "/";
+        });
+    </script>
+</body>
+</html>
